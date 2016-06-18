@@ -9,18 +9,25 @@
 import Foundation
 
 class Money: Equatable {
-  internal let amount: Int
   
-  init(amount: Int) {
+  internal var amount: Int
+  internal var currencyString: String
+  
+  init(amount: Int, currencyString: String) {
     self.amount = amount
+    self.currencyString = currencyString
   }
   
   static func dollar(amount: Int) -> Money {
-    return Dollar(amount: amount)
+    return Dollar(amount: amount, currencyString: "USD")
   }
   
   static func frenc(amount: Int) -> Money {
-    return Frenc(amount: amount)
+    return Frenc(amount: amount, currencyString: "CHF")
+  }
+  
+  func currency() -> String {
+    return currencyString
   }
   
   func times(multiplier: Int) -> Money {
