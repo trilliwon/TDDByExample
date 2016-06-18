@@ -34,8 +34,8 @@ class DollarTests: XCTestCase {
   }
   
   func test_WhenAmountDifferes_ShouldBeNotEqual() {
-    let five = Dollar(amount: 5)
-    let four = Dollar(amount: 4)
+    let five = Dollar(amount: 5, currencyString: "USD")
+    let four = Dollar(amount: 4, currencyString: "USD")
     XCTAssertTrue(five != four)
   }
 }

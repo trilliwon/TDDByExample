@@ -13,8 +13,4 @@ class Frenc: Money {
   override init(amount: Int, currencyString: String) {
     super.init(amount: amount, currencyString: currencyString)
   }
-  
-  override func times(multiplier: Int) -> Money {
-    return Money.frenc(amount * multiplier)
-  }
 }

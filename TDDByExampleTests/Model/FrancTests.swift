@@ -20,8 +20,8 @@ class FrencTests: XCTestCase {
   }
   
   func testFrencMultipleication() {
-    let five = Frenc(amount: 5)
-    XCTAssertEqual(Frenc(amount: 10), five.times(2))
-    XCTAssertEqual(Frenc(amount: 15),five.times(3))
+    let five = Frenc(amount: 5, currencyString: "CHF")
+    XCTAssertEqual(Frenc(amount: 10, currencyString: "CHF"), five.times(2))
+    XCTAssertEqual(Frenc(amount: 15, currencyString: "CHF"),five.times(3))
   }
 }

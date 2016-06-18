@@ -31,13 +31,17 @@ class Money: Equatable {
   }
   
   func times(multiplier: Int) -> Money {
-    fatalError("Implement me!")
+    return Money(amount: amount * multiplier, currencyString: currencyString)
   }
 }
 
 func ==(lhs: Money, rhs: Money) -> Bool {
   
   if lhs.amount != rhs.amount {
+    return false
+  }
+  
+  if lhs.currencyString != rhs.currencyString {
     return false
   }
 
