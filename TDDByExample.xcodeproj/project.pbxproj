@@ -11,10 +11,6 @@
 		CC5823E21D14FEC0005B1344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5823E11D14FEC0005B1344 /* ViewController.swift */; };
 		CC5823E41D14FEC0005B1344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5823E31D14FEC0005B1344 /* Assets.xcassets */; };
 		CC5823E71D14FEC0005B1344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5823E51D14FEC0005B1344 /* Main.storyboard */; };
-		CC5823FE1D14FF01005B1344 /* DollarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5823FC1D14FF01005B1344 /* DollarTests.swift */; };
-		CC5823FF1D14FF01005B1344 /* FrancTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5823FD1D14FF01005B1344 /* FrancTests.swift */; };
-		CC5824031D14FF22005B1344 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5824001D14FF22005B1344 /* Dollar.swift */; };
-		CC5824041D14FF22005B1344 /* Frenc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5824011D14FF22005B1344 /* Frenc.swift */; };
 		CC5824051D14FF22005B1344 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5824021D14FF22005B1344 /* Money.swift */; };
 		CCB70CFB1D15020B00124351 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB70CFA1D15020B00124351 /* MoneyTests.swift */; };
 /* End PBXBuildFile section */
@@ -38,10 +34,6 @@
 		CC5823E81D14FEC0005B1344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC5823ED1D14FEC0005B1344 /* TDDByExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDByExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5823F31D14FEC0005B1344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC5823FC1D14FF01005B1344 /* DollarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DollarTests.swift; path = Model/DollarTests.swift; sourceTree = "<group>"; };
-		CC5823FD1D14FF01005B1344 /* FrancTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FrancTests.swift; path = Model/FrancTests.swift; sourceTree = "<group>"; };
-		CC5824001D14FF22005B1344 /* Dollar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dollar.swift; path = Model/Dollar.swift; sourceTree = "<group>"; };
-		CC5824011D14FF22005B1344 /* Frenc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Frenc.swift; path = Model/Frenc.swift; sourceTree = "<group>"; };
 		CC5824021D14FF22005B1344 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Money.swift; path = Model/Money.swift; sourceTree = "<group>"; };
 		CCB70CFA1D15020B00124351 /* MoneyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoneyTests.swift; path = Model/MoneyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,8 +99,6 @@
 		CC5824061D14FF26005B1344 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CC5824001D14FF22005B1344 /* Dollar.swift */,
-				CC5824011D14FF22005B1344 /* Frenc.swift */,
 				CC5824021D14FF22005B1344 /* Money.swift */,
 			);
 			name = Model;
@@ -117,8 +107,6 @@
 		CC5824071D14FF2C005B1344 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CC5823FC1D14FF01005B1344 /* DollarTests.swift */,
-				CC5823FD1D14FF01005B1344 /* FrancTests.swift */,
 				CCB70CFA1D15020B00124351 /* MoneyTests.swift */,
 			);
 			name = Model;
@@ -224,10 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC5824041D14FF22005B1344 /* Frenc.swift in Sources */,
 				CC5824051D14FF22005B1344 /* Money.swift in Sources */,
 				CC5823E21D14FEC0005B1344 /* ViewController.swift in Sources */,
-				CC5824031D14FF22005B1344 /* Dollar.swift in Sources */,
 				CC5823E01D14FEC0005B1344 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,8 +222,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC5823FF1D14FF01005B1344 /* FrancTests.swift in Sources */,
-				CC5823FE1D14FF01005B1344 /* DollarTests.swift in Sources */,
 				CCB70CFB1D15020B00124351 /* MoneyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

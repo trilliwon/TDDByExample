@@ -19,12 +19,21 @@ class MoneyTests: XCTestCase {
     super.tearDown()
   }
   
+  func testMultipleication() {
+    let five: Money = Money.dollar(5)
+    XCTAssertEqual(Money.dollar(10), five.times(2))
+    XCTAssertEqual(Money.dollar(15),five.times(3))
+  }
+  
   func testCurrency() {
     XCTAssertEqual("USD", Money.dollar(1).currency())
     XCTAssertEqual("CHF", Money.frenc(1).currency())
   }
   
-  func testDifferenctClassEquality() {
-    XCTAssertTrue(Money(amount: 10, currencyString: "CHF") == Frenc(amount: 10, currencyString: "CHF"))
+  
+  func testEquality() {
+    XCTAssertTrue((Money.dollar(5) == Money.dollar(5)))
+    XCTAssertFalse(Money.dollar(5) == Money.dollar(6))
+    XCTAssertFalse(Money.dollar(5) == Money.frenc(5))
   }
 }

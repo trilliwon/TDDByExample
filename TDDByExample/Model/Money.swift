@@ -19,11 +19,11 @@ class Money: Equatable {
   }
   
   static func dollar(amount: Int) -> Money {
-    return Dollar(amount: amount, currencyString: "USD")
+    return Money(amount: amount, currencyString: "USD")
   }
   
   static func frenc(amount: Int) -> Money {
-    return Frenc(amount: amount, currencyString: "CHF")
+    return Money(amount: amount, currencyString: "CHF")
   }
   
   func currency() -> String {
@@ -42,14 +42,6 @@ func ==(lhs: Money, rhs: Money) -> Bool {
   }
   
   if lhs.currencyString != rhs.currencyString {
-    return false
-  }
-
-  if lhs is Frenc && rhs is Dollar {
-    return false
-  }
-  
-  if lhs is Dollar && rhs is Frenc {
     return false
   }
   
