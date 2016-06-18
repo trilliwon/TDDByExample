@@ -9,14 +9,10 @@
 import Foundation
 
 protocol Expression {
-  
+  func reduce(bank: Bank, to: String) -> Money
+  func plus(addend: Expression) -> Expression
 }
 
-class Bank {
-  func reduce(source: Expression, to: String) -> Money {
-    return Money.dollar(10)
-  }
-}
 
 class Money: Equatable, Expression {
   
@@ -40,12 +36,17 @@ class Money: Equatable, Expression {
     return currencyString
   }
   
-  func times(multiplier: Int) -> Money {
+  func times(multiplier: Int) -> Expression {
     return Money(amount: amount * multiplier, currencyString: currencyString)
   }
   
-  func plus(addend: Money) -> Expression {
-    return Money(amount: amount + addend.amount, currencyString: currencyString)
+  func plus(addend: Expression) -> Expression {
+    return Sum(augend: self, addend: addend)
+  }
+  
+  func reduce(bank: Bank, to: String) -> Money {
+    let rate = bank.rate(currency(), to: to)
+    return Money(amount: amount / rate, currencyString: to)
   }
 }
 
