@@ -11,6 +11,7 @@ import Foundation
 protocol Expression {
   func reduce(bank: Bank, to: String) -> Money
   func plus(addend: Expression) -> Expression
+  func times(multiplier: Int) -> Expression
 }
 
 

@@ -18,6 +18,10 @@ struct Sum: Expression {
   }
   
   func plus(addend: Expression) -> Expression {
-    return Money.dollar(0)
+    return Sum(augend: self, addend: addend)
+  }
+  
+  func times(multiplier: Int) -> Expression {
+    return Sum(augend: addend.times(multiplier), addend: addend.times(multiplier))
   }
 }

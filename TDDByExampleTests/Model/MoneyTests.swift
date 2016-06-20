@@ -83,12 +83,32 @@ class MoneyTests: XCTestCase {
   }
   
   func test_MixedAddtion() {
-    let fiveBucks: Money = Money.dollar(5)
-    let tenFrances: Money = Money.frenc(10)
+    let fiveBucks: Expression = Money.dollar(5)
+    let tenFrances: Expression = Money.frenc(10)
     let bank = Bank()
     bank.addRate("CHF", to: "USD", rate: 2)
     let result: Money = bank.reduce(fiveBucks.plus(tenFrances), to: "USD")
     XCTAssertEqual(Money.dollar(10), result)
+  }
+  
+  func test_SumPlusMoney() {
+    let fiveBucks: Expression = Money.dollar(5)
+    let tenFrances: Expression = Money.frenc(10)
+    let bank = Bank()
+    bank.addRate("CHF", to: "USD", rate: 2)
+    let sum: Expression = Sum(augend: fiveBucks, addend: tenFrances).plus(fiveBucks)
+    let result: Money = bank.reduce(sum, to: "USD")
+    XCTAssertEqual(Money.dollar(15), result)
+  }
+  
+  func test_SumTimes() {
+    let fiveBucks: Expression = Money.dollar(5)
+    let tenFrances: Expression = Money.frenc(10)
+    let bank = Bank()
+    bank.addRate("CHF", to: "USD", rate: 2)
+    let sum: Expression = Sum(augend: fiveBucks, addend: tenFrances).times(2)
+    let result: Money = bank.reduce(sum, to: "USD")
+    XCTAssertEqual(Money.dollar(20), result)
   }
 }
 
