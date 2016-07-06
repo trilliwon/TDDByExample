@@ -1,10 +1,3 @@
-//
-//  MoneyTests.swift
-//  TDDByExample
-//
-//  Created by Steve Jo on 6/18/16.
-//  Copyright © 2016 Steve Jo. All rights reserved.
-//
 
 import XCTest
 @testable import TDDByExample

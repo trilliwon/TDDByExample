@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CC5823E01D14FEC0005B1344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5823DF1D14FEC0005B1344 /* AppDelegate.swift */; };
-		CC5823E21D14FEC0005B1344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5823E11D14FEC0005B1344 /* ViewController.swift */; };
 		CC5823E41D14FEC0005B1344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5823E31D14FEC0005B1344 /* Assets.xcassets */; };
 		CC5823E71D14FEC0005B1344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5823E51D14FEC0005B1344 /* Main.storyboard */; };
 		CC5824051D14FF22005B1344 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5824021D14FF22005B1344 /* Money.swift */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		CC5823DC1D14FEC0005B1344 /* TDDByExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDByExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5823DF1D14FEC0005B1344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC5823E11D14FEC0005B1344 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC5823E31D14FEC0005B1344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5823E61D14FEC0005B1344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC5823E81D14FEC0005B1344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				CC5823DF1D14FEC0005B1344 /* AppDelegate.swift */,
-				CC5823E11D14FEC0005B1344 /* ViewController.swift */,
 				CC5823E31D14FEC0005B1344 /* Assets.xcassets */,
 				CC5823E51D14FEC0005B1344 /* Main.storyboard */,
 				CC5823E81D14FEC0005B1344 /* Info.plist */,
@@ -228,7 +225,6 @@
 				CCB70CFD1D151EF600124351 /* Pair.swift in Sources */,
 				CCB70D031D1522CA00124351 /* HashTable.swift in Sources */,
 				CCB70CFF1D151F0900124351 /* Bank.swift in Sources */,
-				CC5823E21D14FEC0005B1344 /* ViewController.swift in Sources */,
 				CC5823E01D14FEC0005B1344 /* AppDelegate.swift in Sources */,
 				CCB70D011D151F1900124351 /* Sum.swift in Sources */,
 			);
