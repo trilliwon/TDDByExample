@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  TDDByExample
+//  TDD
 //
-//  Created by Steve Jo on 6/18/16.
+//  Created by Steve Jo on 29/11/2016.
 //  Copyright © 2016 Steve Jo. All rights reserved.
 //
 
@@ -13,11 +13,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 
-  func applicationDidFinishLaunching(aNotification: NSNotification) {
+  func applicationDidFinishLaunching(_ aNotification: Notification) {
     // Insert code here to initialize your application
   }
 
-  func applicationWillTerminate(aNotification: NSNotification) {
+  func applicationWillTerminate(_ aNotification: Notification) {
     // Insert code here to tear down your application
   }
 

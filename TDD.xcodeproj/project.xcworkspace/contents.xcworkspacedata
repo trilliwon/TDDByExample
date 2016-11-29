@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TDDByExample.xcodeproj">
+      location = "self:TDD.xcodeproj">
    </FileRef>
 </Workspace>
