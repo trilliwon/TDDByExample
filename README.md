@@ -3,7 +3,7 @@ Swift TDD: By Example
 
 ---
 
-###Money.swift
+### Money.swift
 ```Swift
 import Foundation
 
@@ -68,7 +68,7 @@ func ==(lhs: Money, rhs: Money) -> Bool {
 
 ---
 
-###MoneyTests.swift
+### MoneyTests.swift
 ```Swift
 import XCTest
 @testable import TDDByExample
